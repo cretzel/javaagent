@@ -2,6 +2,9 @@
 
 A simple javaagent using javassist to instrument bytecode.
 
-Use VM argument
+After mvn install, run Main.java with the following VM argument
 
+```
 -javaagent:"javaagent-agent/target/javaagent-agent-1.0-SNAPSHOT-jar-with-dependencies.jar"
+```
+
