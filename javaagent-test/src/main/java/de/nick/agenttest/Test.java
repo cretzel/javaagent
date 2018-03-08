@@ -1,5 +1,7 @@
 package de.nick.agenttest;
 
+import de.nick.agenttest.annotation.Fetzed;
+
 /**
  * Created by cretzel on 07.03.18.
  */
@@ -18,6 +20,11 @@ public class Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Fetzed(dude = "Jimmi")
+    public void fetzit() {
+        System.out.println("fetzed");
     }
 
 

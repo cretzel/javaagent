@@ -9,5 +9,6 @@ public class Main {
 
         Test test1 = new Test("Nick");
         test1.doIt();
+        test1.fetzit();
     }
 }

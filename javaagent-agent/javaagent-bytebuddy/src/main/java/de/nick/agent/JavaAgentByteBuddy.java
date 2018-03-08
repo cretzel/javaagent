@@ -21,7 +21,21 @@ public class JavaAgentByteBuddy {
                 .intercept(
 //                  MethodDelegation.to(PrintingInterceptor.class).andThen(SuperMethodCall.INSTANCE)
                     MethodDelegation.to(TimingInterceptor.class)
-                ))
+                )
+            )
+
+            .installOn(inst);
+
+        new AgentBuilder.Default()
+            .with(new ErrorLoggingListener())
+            .type(ElementMatchers.named("de.nick.agenttest.Test"))
+            .transform((builder, type, classloader, javaModule) -> builder
+                    .method(ElementMatchers.isAnnotatedWith(ElementMatchers.named("de.nick.agenttest.annotation.Fetzed")))
+                    .intercept(
+                        MethodDelegation.to(FetzedInterceptor.class)
+                    )
+            )
+
             .installOn(inst);
 
     }
