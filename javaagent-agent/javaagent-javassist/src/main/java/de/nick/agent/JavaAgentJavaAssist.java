@@ -10,9 +10,9 @@ import java.lang.instrument.Instrumentation;
 import java.security.ProtectionDomain;
 
 /**
- * Created by wied013 on 07.03.18.
+ * Created by cretzel on 07.03.18.
  */
-public class JavaAgent {
+public class JavaAgentJavaAssist {
 
     public static void premain(String agentArgs, Instrumentation inst) {
         inst.addTransformer(new ClassFileTransformer() {

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+  <configuration default="false" name="Main-ByteBuddy" type="Application" factoryName="Application">
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
       <pattern>
         <option name="PATTERN" value="de.nick.agenttest.*" />
@@ -7,7 +7,7 @@
       </pattern>
     </extension>
     <option name="MAIN_CLASS_NAME" value="de.nick.agenttest.Main" />
-    <option name="VM_PARAMETERS" value="-javaagent:&quot;javaagent-agent/target/javaagent-agent-1.0-SNAPSHOT-jar-with-dependencies.jar&quot;" />
+    <option name="VM_PARAMETERS" value="-javaagent:&quot;javaagent-agent/javaagent-bytebuddy/target/javaagent-bytebuddy-1.0-SNAPSHOT-jar-with-dependencies.jar&quot;" />
     <option name="PROGRAM_PARAMETERS" value="" />
     <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />

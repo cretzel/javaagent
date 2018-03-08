@@ -1,7 +1,7 @@
 package de.nick.agenttest;
 
 /**
- * Created by wied013 on 07.03.18.
+ * Created by cretzel on 07.03.18.
  */
 public class Test {
 
@@ -13,6 +13,11 @@ public class Test {
 
     public void doIt() {
         System.out.println("My name is " + name);
+        try {
+            Thread.sleep(10);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
